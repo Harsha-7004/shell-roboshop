@@ -28,6 +28,8 @@ do
             --query 'Reservations[].Instances[].PrivateIpAddress' \
             --output text
         )
+
+    esle    
         
     fi
 
