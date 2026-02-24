@@ -27,9 +27,7 @@ do
             --instance-ids $INSTANCE_ID \
             --query 'Reservations[].Instances[].PrivateIpAddress' \
             --output text
-        )
-
-    esle    
+        )  
         
     fi
 
