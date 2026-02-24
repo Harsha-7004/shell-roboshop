@@ -18,14 +18,15 @@ do
         aws ec2 describe-instances \
         --instance-ids $instance_id \ 
         --query 'Reservations[*].Instances[*].PublicIpAddress' \
-        --output text)
-
+        --output text
+        )
     else 
-        IP=$(aws ec2 describe-instances \
+        IP=$(
+        aws ec2 describe-instances \
         --instance-ids $instance_id \ 
         --query 'Reservations[*].Instances[*].PrivateIpAddress' \
-        --output text)
+        --output text
+        )
     fi
-
 done
 
