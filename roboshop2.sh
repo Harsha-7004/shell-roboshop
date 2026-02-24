@@ -32,4 +32,6 @@ do
     fi
 
 echo "IP Address: $IP"
+echo "$INSTANCE_ID"
+
 done    
